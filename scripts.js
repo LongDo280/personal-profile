@@ -29,25 +29,25 @@ const zoomTexts = document.querySelectorAll('.zoom-text');
 const overlay = document.getElementById('imageOverlay');
 const overlayImg = overlay.querySelector('img');
 
-// Khi click vào một .zoom-text thì hiện overlay
+
 zoomTexts.forEach(item => {
   item.addEventListener('click', () => {
     const src = item.getAttribute('data-img');
     if (src) {
       overlayImg.src = src;
       overlay.style.display = 'flex';
-      setTimeout(() => overlay.classList.add('show'), 10); // kích hoạt animation
+      setTimeout(() => overlay.classList.add('show'), 10); 
     }
   });
 });
 
-// Khi click vào overlay thì ẩn đi
+
 overlay.addEventListener('click', () => {
   overlay.classList.remove('show');
   setTimeout(() => {
     overlay.style.display = 'none';
     overlayImg.src = '';
-  }, 300); // đợi animation hoàn tất
+  }, 300); 
 });
 
 
