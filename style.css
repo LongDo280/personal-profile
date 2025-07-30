@@ -203,7 +203,7 @@ html {
 .fixed-nav ul li a img {
     width: 20px;
     height: 20px;
-    object-fit: contain; /* Giữ nguyên tỉ lệ icon */
+    object-fit: contain; 
 }
 
 footer{
